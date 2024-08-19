@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Outside</title>
+    <link rel="shortcut icon" href="/assets/icon.png" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
+    <script src="/js/installapp.js"></script>
+</head>
+
+<body>
+    <div id="popup" class="popup">
+        <div class="popup-window">
+            <h2>Welcome!</h2>
+            <p>This website was made to make the <a href="https://clearoutside.com/" target="_blank">Clear Outside website</a> (© 2024 First Light Optics Ltd, All rights reserved) <a href="https://web.dev/articles/what-are-pwas" target="_blank">PWA</a> compatible, so users can install the site as an app. Currently cookies of the original site can't be stored, so preferences such as your default location can't be saved.</p>
+            <h4>Does the site not load?</h4>
+            <p>That happends... Try to refresh the page a couple times.</p>
+            <br>
+            <h3>DISCLAIMER!</h3>
+            <p>I made this website purely for educational purposes. The site is purely an iframe clone of the original site (<a href="https://clearoutside.com/" target="_blank">Clear Outside</a>), and doesn't add any extra trackers or ads that weren't present on the original site. <b>First Light Optics Ltd always stays the legal owner of this project.</b></p>
+            <div class="buttons">
+                <button onclick="closePopup()">Close</button>
+                <button onclick="setShowPopup()">Don't show again</button>
+            </div>
+        </div>
+        <script src="/js/popupwindow.js"></script>
+    </div>
+    <div class="app">
+        <iframe src="https://clearoutside.com/" frameborder="0" allowfullscreen></iframe>
+    </div>
+</body>
+
+<style>
+    :root {
+        --bg-dark: #333333;
+        --bg-darker: #222222;
+        --bg-darkest: #111111;
+        --accent: #5089c6;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: var(--bg-dark);
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1 {
+            margin: 0 0 0.25em;
+        }
+        h2 {
+            margin: 0 0 0.25em;
+        }
+        h3 {
+            margin: 0 0 0.25em;
+        }
+        h4 {
+            margin: 0 0 0.25em;
+        }
+        p {
+            margin: 0 0 0.25em;
+            line-height: 1.2em;
+        }
+        a {
+            color: var(--accent);
+        }
+    }
+    .popup {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(17, 17, 17, 0.75);
+            .popup-window {
+                position: relative;
+                width: min(500px, 100%);
+                padding: 15px;
+                background-color: #cccccc;
+                color: var(--bg-darker);
+                button {
+                    cursor: pointer;
+                }
+                .buttons {
+                    margin-top: 15px;
+                    * {
+                        padding: 5px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .app {
+            width: 100%;
+            height: 100lvh;
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
+        }
+</style>
+
+</html>

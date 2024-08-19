@@ -1,0 +1,21 @@
+{
+  "theme_color": "#5089c6",
+  "background_color": "#333333",
+  "icons": [
+    {
+      "purpose": "any",
+      "sizes": "512x512",
+      "src": "/assets/icon.png",
+      "type": "image/png"
+    }
+  ],
+  "orientation": "any",
+  "display": "standalone",
+  "dir": "auto",
+  "lang": "en",
+  "name": "Clear Outside",
+  "short_name": "Clear Outside",
+  "start_url": "https://delabiemedia.be/clearoutside/index.html",
+  "scope": "https://delabiemedia.be/clearoutside",
+  "id": "https://delabiemedia.be/clearoutside/index.html"
+}
