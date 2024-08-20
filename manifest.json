@@ -15,7 +15,7 @@
   "lang": "en",
   "name": "Clear Outside",
   "short_name": "Clear Outside",
-  "start_url": "clearoutside/index.html",
-  "scope": "/clearoutside",
-  "id": "clearoutside/index.html"
+  "start_url": "/index.html",
+  "scope": "/",
+  "id": "/index.html"
 }
