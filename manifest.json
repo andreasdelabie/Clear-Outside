@@ -10,7 +10,7 @@
     }
   ],
   "orientation": "any",
-  "display": "standalone",
+  "display": "fullscreen",
   "dir": "auto",
   "lang": "en",
   "name": "Clear Outside",
